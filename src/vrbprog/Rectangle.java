@@ -9,7 +9,6 @@ public class Rectangle extends PlaneShape {
         listPoints.add(point);
         this.width = width;
         this.height = height;
-        type = "rectangle";
     }
 
     @Override

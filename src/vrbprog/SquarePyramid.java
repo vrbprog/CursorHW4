@@ -8,7 +8,6 @@ public class SquarePyramid extends SpaceShape {
         listPoints.add(baseCenter);
         this.baseWidth = baseWidth;
         this.height = height;
-        type = "squarePyramid";
     }
 
     @Override

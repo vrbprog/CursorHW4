@@ -10,7 +10,6 @@ public class Cuboid extends SpaceShape {
         this.width = width;
         this.height = height;
         this.depth = depth;
-        type = "cuboid";
     }
 
     @Override

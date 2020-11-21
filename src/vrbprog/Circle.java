@@ -7,7 +7,6 @@ public class Circle extends PlaneShape {
     public Circle(Vertice2D center, double radius) {
         listPoints.add(center);
         this.radius = radius;
-        type = "circle";
     }
 
     @Override

@@ -8,7 +8,6 @@ public class Sphere extends SpaceShape {
     public Sphere(Vertice3D center, double radius) {
         listPoints.add(center);
         this.radius = radius;
-        type = "sphere";
     }
 
     @Override

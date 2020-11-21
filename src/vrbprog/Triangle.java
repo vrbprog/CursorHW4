@@ -6,7 +6,6 @@ public class Triangle extends PlaneShape {
         listPoints.add(pointOne);
         listPoints.add(pointTwo);
         listPoints.add(pointThree);
-        type = "triangle";
     }
 
     private double getLength(Vertice2D pointOne, Vertice2D pointTwo) {
