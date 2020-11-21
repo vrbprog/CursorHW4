@@ -1,5 +1,9 @@
 package vrbprog;
 
+import vrbprog.PlaneShapes.*;
+import vrbprog.Shapes.Shape;
+import vrbprog.SpaceShapes.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

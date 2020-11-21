@@ -1,4 +1,4 @@
-package vrbprog;
+package vrbprog.SpaceShapes;
 
 public class SquarePyramid extends SpaceShape {
     private double baseWidth;

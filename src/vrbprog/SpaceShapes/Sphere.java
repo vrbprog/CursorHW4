@@ -1,30 +1,29 @@
-package vrbprog;
+package vrbprog.SpaceShapes;
 
-public class Circle extends PlaneShape {
-
+public class Sphere extends SpaceShape {
     private double radius;
 
-    public Circle(Vertice2D center, double radius) {
+    public Sphere(Vertice3D center, double radius) {
         listPoints.add(center);
         this.radius = radius;
     }
 
     @Override
     public double getArea() {
-        return Math.PI * radius * radius;
+        return 4 * Math.PI * radius * radius;
     }
 
     @Override
-    public double getPerimeter() {
-        return 2 * Math.PI * radius;
+    public double getVolume() {
+        return 4 * Math.PI * radius * radius * radius / 3.0;
     }
 
     @Override
     public String toString() {
-        return "Circle{" +
+        return "Sphere{" +
                 "listPoints=" + listPoints +
                 ", radius=" + radius +
-                ", Perimeter=" + getPerimeter() +
+                ", Volume=" + getVolume() +
                 ", Area=" + getArea() +
                 '}';
     }

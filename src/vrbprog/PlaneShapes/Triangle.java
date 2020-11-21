@@ -1,4 +1,4 @@
-package vrbprog;
+package vrbprog.PlaneShapes;
 
 public class Triangle extends PlaneShape {
 
@@ -9,8 +9,8 @@ public class Triangle extends PlaneShape {
     }
 
     private double getLength(Vertice2D pointOne, Vertice2D pointTwo) {
-        return Math.sqrt((pointOne.x - pointTwo.x) * (pointOne.x - pointTwo.x) +
-                (pointOne.y - pointTwo.y) * (pointOne.y - pointTwo.y));
+        return Math.sqrt((pointOne.getX() - pointTwo.getX()) * (pointOne.getX() - pointTwo.getX()) +
+                (pointOne.getY() - pointTwo.getY()) * (pointOne.getY() - pointTwo.getY()));
     }
 
     @Override
@@ -18,7 +18,8 @@ public class Triangle extends PlaneShape {
         Vertice2D t1 = (Vertice2D) listPoints.get(0);
         Vertice2D t2 = (Vertice2D) listPoints.get(1);
         Vertice2D t3 = (Vertice2D) listPoints.get(2);
-        return Math.abs(((t1.x - t3.x)*(t2.y - t3.y) - (t2.x - t3.x)*(t1.y - t3.y))/2.0);
+        return Math.abs(((t1.getX() - t3.getX())*(t2.getY() - t3.getY()) -
+                (t2.getX() - t3.getX())*(t1.getY() - t3.getY()))/2.0);
     }
 
     @Override

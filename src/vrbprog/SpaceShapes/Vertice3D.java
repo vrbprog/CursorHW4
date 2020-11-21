@@ -1,4 +1,5 @@
-package vrbprog;
+package vrbprog.SpaceShapes;
+import vrbprog.PlaneShapes.Vertice2D;
 
 public class Vertice3D extends Vertice2D {
 
@@ -12,8 +13,8 @@ public class Vertice3D extends Vertice2D {
     @Override
     public String toString() {
         return "Vertice3D{" +
-                "x=" + x +
-                ", y=" + y +
+                "x=" + getX() +
+                ", y=" + getY() +
                 ", z=" + z +
                 '}';
     }

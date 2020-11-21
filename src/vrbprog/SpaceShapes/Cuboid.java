@@ -1,4 +1,4 @@
-package vrbprog;
+package vrbprog.SpaceShapes;
 
 public class Cuboid extends SpaceShape {
     private double width;

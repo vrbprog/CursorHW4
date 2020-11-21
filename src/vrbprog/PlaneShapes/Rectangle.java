@@ -1,4 +1,4 @@
-package vrbprog;
+package vrbprog.PlaneShapes;
 
 public class Rectangle extends PlaneShape {
 

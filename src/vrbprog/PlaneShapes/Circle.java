@@ -1,31 +1,30 @@
-package vrbprog;
+package vrbprog.PlaneShapes;
 
-import java.util.Random;
+public class Circle extends PlaneShape {
 
-public class Sphere extends SpaceShape {
     private double radius;
 
-    public Sphere(Vertice3D center, double radius) {
+    public Circle(Vertice2D center, double radius) {
         listPoints.add(center);
         this.radius = radius;
     }
 
     @Override
     public double getArea() {
-        return 4 * Math.PI * radius * radius;
+        return Math.PI * radius * radius;
     }
 
     @Override
-    public double getVolume() {
-        return 4 * Math.PI * radius * radius * radius / 3.0;
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
     }
 
     @Override
     public String toString() {
-        return "Sphere{" +
+        return "Circle{" +
                 "listPoints=" + listPoints +
                 ", radius=" + radius +
-                ", Volume=" + getVolume() +
+                ", Perimeter=" + getPerimeter() +
                 ", Area=" + getArea() +
                 '}';
     }
